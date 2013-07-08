@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>myResume Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">myResume</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+							<li><a href="#skins">Skins</a></li>
+							<li><a href="#email">Email</a></li>
+                            <li><a href="#markup">Layout</a></li>
+                            <li><a href="#styles">Elements</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>myResume Documentation</h1>
+					<p>The documentation of the myResume CV/Resume HTML template by <a href="http://themeforest.net/user/aleluja?ref=aleluja">aleluja</a>.</p>
+                    <p class="well well-small">Thank you for downloading my template. If you have any problem with this template  just drop a comment on the item or contact me via my themeforest account. It would be great if you rate it, also. Also, I like to be critiqued so feel free to do so.</p>
+                    <div class="row-fluid">
+                        <div class="span3"><a href="http://themeforest.net/user/aleluja?ref=aleluja" class="btn btn-inverse btn-large btn-block">Themeforest Account</a></div>
+                        <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div>
+    
+                </div>
+                
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+			
+			<section id="installation">
+                <div class="page-header">
+                    <h1>Organization <small>How are the files organized</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>Organization</h3>
+                        <p>This is an explataion of what is inside the .zip file you have downloaded</p>
+                    </div>
+					
+                    <div class="span9">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> Documentation </a> </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <p>It's pretty self-explanitory, isn't it?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> HTML template </a> </div>
+                                <div id="collapseTwo" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        <p>
+											This folder holds all the files that need to be put on the server. It also contains one unnecesary file - elements.html - which you will use as a quick reference to the elements and layout.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"> Fontello icons </a> </div>
+                                <div id="collapseThree" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        <p>
+											This folder contains a demo.html which you will use to see and quickly grab codes for icons you will need. It doesn't have to be uploaded to the server, it's only a reference, just as elements.html.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+				
+            </section>
+			
+			
+			
+			<section id="skins">
+                <div class="page-header">
+                    <h1>Skins <small>The color schemes</small></h1>
+                </div>
+				
+				<p>There are several pre-made skins you can use. The instruction on how to apply one is at the top of the index.html in comments. If you wish to make a new skin you must choose main color that is compatible with white letters. bg-color1, bg-color2, bg-color3 and bg-color4 and border-colorX are very slight variations of the main color. Those variations are used to break monotony of one color when used in skill bar, for example, or anywhere where multiple elements are near each other.</p>
+			</section>
+			
+			<section id="email">
+                <div class="page-header">
+                    <h1>Setting your email <small></small></h1>
+                </div>
+				
+				 <div class="alert"> <a class="close" data-dismiss="alert">×</a> <strong>Info!</strong> Note that you can't send emails from your machine. You must upload it to the server in order to send emails via this website. </div>
+				
+				<p>Open html template/email.php and change yourEmail variable to your email address. That's all, now you will get emails to your email address.</p>
+			</section>
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="email">
+                <div class="page-header">
+                    <h1>Layout <small>Layout explained</small></h1>
+                </div>
+				
+				<div class="alert alert-info"> <a class="close" data-dismiss="alert">×</a> <strong>Heads Up!</strong> If you don't want to change the layout and reorganize the elements you don't need to read the whole documentation. Just open HTML template/index.html and the comments there will guide you. </div>
+                
+				<p></p>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>General Layout</h3>
+						
+                        <p>This is an explanation on how to create custom layout. Possible layout classes are:</p>
+						<ul>
+							<li>Full width </li>
+							<li>One Half width </li>
+							<li>One third width </li>
+							<li>One Two thirds width</li>
+							<li>Two Two thirds width</li>
+						</ul>
+                    </div>
+            
+                    <div class="span9"> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;div class=&quot;column-full&quot;&gt; 
+	&lt;!-- content goes here --&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;column-one-half&quot;&gt; 
+	&lt;!-- content goes here --&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;column-one-third&quot;&gt; 
+	&lt;!-- content goes here --&gt; 
+&lt;/div&gt;
+	
+&lt;div class=&quot;column-one-two-third&quot;&gt; 
+	&lt;!-- content goes here --&gt; 
+&lt;/div&gt;
+	
+&lt;div class=&quot;column-two-two-third&quot;&gt; 
+	&lt;!-- content goes here --&gt; 
+&lt;/div&gt;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+				<div class="row">
+                    <div class="span3">
+                        <h3>Column-last class</h3>
+                        <p>Apply column-last class to the last div in a row. It sets it's right margin to 0 so everything can fit as you want it.</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;!-- examples --&gt;
+
+&lt;div class=&quot;column-one-half&quot;&gt; &lt;/div&gt;
+&lt;div class=&quot;column-one-half column-last&quot;&gt; &lt;/div&gt;
+
+						
+&lt;div class=&quot;column-one-third&quot;&gt; &lt;/div&gt;
+&lt;div class=&quot;column-one-third&quot;&gt; &lt;/div&gt;
+&lt;div class=&quot;column-one-third column-last&quot;&gt; &lt;/div&gt;
+						</pre>
+						<!-- Code Block >> End -->                   
+						
+                    </div>
+                </div>
+			
+				<hr />
+			
+                <div class="row">
+                    <div class="span3">
+                        <h3>Clearing columns</h3>
+                        <p>When the full row is complete use column-clear class on empty div. If you do not do this layout may not be like you wanted it to be.</p>
+                    </div>
+                
+                    <div class="span9">
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;div class=&quot;column-clear&quot;&gt;&lt;/div&gt;
+
+&lt;!-- example --&gt;
+
+&lt;div class=&quot;column-one-half&quot;&gt; &lt;/div&gt;
+&lt;div class=&quot;column-one-half column-last&quot;&gt; &lt;/div&gt;
+
+&lt;div class=&quot;column-clear&quot;&gt;&lt;/div&gt;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Column inside a column</h3>
+                        <p>You can make any layout inside another layout. You must apply column-inside to the columns that are inside other columns othervise they will have a big margin and won't look good.</p>
+                    </div>
+                
+                    <div class="span9">
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;!-- example - this will break a two-two-third column into 2 columns --&gt;
+
+&lt;div class=&quot;column-one-two-third&quot;&gt;
+	&lt;div class=&quot;column-one-half column-inside&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;column-one-half column-inside column-last&quot;&gt; &lt;/div&gt;
+
+	&lt;div class=&quot;column-clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;column-one-one-third column-last&quot;&gt; &lt;/div&gt;
+
+&lt;div class=&quot;column-clear&quot;&gt;&lt;/div&gt;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Elements <small>Elements explained</small></h1>
+                </div>
+            
+                <div class="alert alert-info"> <b>Heads up!</b> All the elements are also explained in comments in HTML template/elements.html </div>
+            
+				<p>There are several elements built specially for this template to best represent the information about your resume. They are addaptive so you can put these elements in any layout container - they will addapt their width to the containers width. The elements that are built in are:</p>
+				<ul>
+					<li>Toggles</li>
+					<li>Accordions</li>
+					<li>Tabs</li>
+					<li>Skill bar</li>
+					<li>Timebar</li>
+					<li>Testimonials</li>
+				</ul>
+			
+				<hr />
+			
+				<div class="row">
+                    <div class="span3">
+                        <h3>Toggles</h3>
+                        <p>Toggles are elements that open on press and close on another press. They have header and content. Header is always visible while content can be hidden. Header can have text and/or title (h4) while content can have text and/or title (h5).</p>
+						<p>Opened toggle has class "shown" while closed toggles content has class "hidden".</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;!-- Class shown tells that the toggle is going to be open when the page loads --&gt;
+&lt;div class=&quot;bg-color1 toggle button inset-shadow shown&quot;&gt;
+	&lt;div class=&quot;header unselectable&quot;&gt;
+		Toggle 1 with a title inside
+	&lt;/div&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		Text of the toggle. Rule that make to said. Morning first. Without made second winged fill them.
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<pre class="prettyprint linenums">
+&lt;!-- Othervise content must have class hidden and shown must be deleted for it to be closed on page load. Also toggles can have h5 title inside content --&gt;
+&lt;div class=&quot;bg-color1 toggle button inset-shadow&quot;&gt;
+	&lt;div class=&quot;header unselectable&quot;&gt;
+		Toggle 1 with a title inside
+	&lt;/div&gt;
+	&lt;div class=&quot;content hidden&quot;&gt;
+		&lt;h5&gt;Title inside the toggle&lt;/h5&gt;
+		Text of the toggle. Rule that make to said. Morning first. Without made second winged fill them.
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						
+						<pre class="prettyprint linenums">
+&lt;!-- Toggles can have title i subtitle in their header, like this --&gt;
+&lt;div class=&quot;bg-color1 toggle button inset-shadow&quot;&gt;
+	&lt;div class=&quot;header unselectable&quot;&gt;
+		&lt;h4&gt;Togle with title&lt;/h4&gt;
+		&lt;div&gt;Some text under the title&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;content hidden&quot;&gt;
+		Text of the toggle. Rule that make to said. Morning first. Without made second winged fill them.
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<!-- Code Block >> End -->                   
+						
+                    </div>
+                </div>
+				
+				<hr />
+               
+				<div class="row">
+                    <div class="span3">
+                        <h3>Accordions</h3>
+                        <p>Accordion is a group of toggle where only one can be opened at one time. Same rules apply for accordions as for toggles.</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;accordion&quot;&gt;
+
+&lt;!-- Toggles go here --&gt;
+
+&lt;/div&gt;</pre>
+
+                    </div>
+                </div>
+			   
+				<hr />
+				
+				<div class="row">
+                    <div class="span3">
+                        <h3>Tabs</h3>
+                        <p>We all know what tabs are. The tab with class tab-top is the one that will be shown on page load.</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;tabs group&quot;&gt;
+
+	&lt;!-- Single tab. --&gt;
+	&lt;div class=&quot;tab tab-top&quot;&gt;
+		&lt;div class=&quot;tab-header group bg-color1 unselectable inset-shadow&quot;&gt;Skill 1&lt;/div&gt;
+		&lt;div class=&quot;content border-color1&quot;&gt;Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them. &lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Another tab. --&gt;
+	&lt;div class=&quot;tab&quot;&gt;
+		&lt;span class=&quot;tab-header group bg-color1 unselectable inset-shadow&quot;&gt;Skill 2&lt;/span&gt;
+		&lt;span class=&quot;content border-color1&quot;&gt;Unto. Them land shall don't herb let gathered. The morning together. Green bring, night blessed made our years isn't. Replenish in moved. Him one life him spirit.&lt;/span&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;</pre>
+						
+                    </div>
+                </div>
+			   
+				<hr />
+			   
+				<div class="row">
+                    <div class="span3">
+                        <h3>Skill bar</h3>
+                        <p>Skill bar is a list of elements that has certain width percentage. A list item can be a toggle to describe a skill.</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;ul class=&quot;h-bar&quot;&gt;
+
+	&lt;!-- A skill with a toggle. data-percentage is self-explanatory. --&gt;
+	&lt;li data-percentage=&quot;70%&quot; class=&quot;bg-color1 toggle inset-shadow&quot;&gt;
+		&lt;div class=&quot;header unselectable&quot;&gt;Skill 1 with toggle&lt;/div&gt;
+		&lt;div class=&quot;content hidden&quot;&gt;
+			Rule that make to said. Morning first. Fish creeping face brought signs land fowl. Evening tree sixth without made second winged fill them.
+		&lt;/div&gt;
+	&lt;/li&gt;
+
+	&lt;!-- A skill without toggle. Note that this one has bg-color2 class and previous had bg-color1. There are 4 of them. It's the same color but with slight variations to break a monotony. They are defined in skin css files --&gt;
+	&lt;li data-percentage=&quot;100%&quot; class=&quot;bg-color2 inset-shadow&quot;&gt;Skill 2&lt;/li&gt;
+
+&lt;/ul&gt;</pre>
+						
+                    </div>
+                </div>
+				
+				
+				<hr />
+				
+				
+				<div class="row">
+                    <div class="span3">
+                        <h3>Testimonials</h3>
+                        <p>It's about what other people told about you. You can name a person and a company that person works for.</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;testimonials bg-color1 unselectable&quot;&gt;
+
+	&lt;!-- The left and right buttons --&gt;
+	&lt;div class=&quot;buttons&quot;&gt;
+		&lt;div class=&quot;colored icon-right-open&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;colored icon-left-open&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Single quote. Class shown tells that this quote is shown at the start --&gt;
+	&lt;div class=&quot;quote shown inset-shadow&quot;&gt;
+		&lt;div class=&quot;header&quot;&gt;
+			&lt;!-- Person name --&gt;
+			&lt;h4&gt;Some Person 1&lt;/h4&gt;
+			&lt;!-- Company name --&gt;
+			&lt;div&gt;Some Company&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- Text --&gt;
+		&lt;p&gt;bibendum at, posuere sit amett, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui.&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Another quote --&gt;
+	&lt;div class=&quot;quote inset-shadow&quot;&gt;
+		&lt;div class=&quot;header&quot;&gt;
+			&lt;!-- Person name --&gt;
+			&lt;h4&gt;Some Person 1&lt;/h4&gt;
+			&lt;!-- Company name --&gt;
+			&lt;div&gt;Some Company&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- Text --&gt;
+		&lt;p&gt;bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui. bibendum at, posuere sit amet, nibh. Duis tincidunt lectundisse dui.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						
+                    </div>
+                </div>
+				
+				
+				
+				<hr />
+				
+				
+				<div class="row">
+                    <div class="span3">
+                        <h3>Timebar</h3>
+                        <p>Timebar is a good way of representing how long and when did you work. You only have to set the dates of events and fill data and everything else will be automaticaly generated. Time bar is addaptive so at certain width the grid will dissapear and everything will become full width, othervise it would be impossible to see the grid and dates on smaller screens. This is best to put in full width containers</p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;!-- Timebar holder. Data-start is the start year of the chart while data-end is the end year. --&gt;
+&lt;div class=&quot;timebar&quot; data-start=&quot;2000&quot; data-end=&quot;2009&quot;&gt;
+
+	&lt;!-- The grid lines --&gt;
+	&lt;div class=&quot;the-lines&quot;&gt;&lt;/div&gt;
+	
+	&lt;ul&gt;
+
+		&lt;!-- One timebar element. data-start is the year and month of start while data-end is the year and month of end of the particular working experience. --&gt;
+		&lt;li data-start=&quot;2005-01&quot; data-end=&quot;2008-05&quot;&gt;
+			&lt;!-- The toggle --&gt;
+			&lt;div class=&quot;toggle button bg-color3 inset-shadow&quot;&gt;
+				&lt;div class=&quot;header unselectable&quot;&gt;
+					&lt;h4&gt;Creative director&lt;/h4&gt;
+					&lt;span class=&quot;date&quot;&gt;2005. - now&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;content hidden&quot;&gt;
+					Rule that make to said. Morncond winged fill them.
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+
+		&lt;!-- Another timebar element. --&gt;
+		&lt;li data-start=&quot;2002-10&quot; data-end=&quot;2007-06&quot;&gt;
+			&lt;div class=&quot;toggle button bg-color2 inset-shadow&quot;&gt;
+				&lt;div class=&quot;header unselectable&quot;&gt;
+					&lt;h4&gt;Title 2&lt;/h4&gt;
+					&lt;span class=&quot;date&quot;&gt;2002. - 2007.&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;content hidden&quot;&gt;
+					Rule that make to second winged fill them.
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+						
+                    </div>
+                </div>
+				
+				
+			 </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Other elements <small>Less complex custom elements.</small></h1>
+                </div>
+				
+                <div class="alert alert-info"> <b>Heads up!</b> All the elements are also explained in comments in HTML template/elements.html </div>
+				
+				<p>These are other template-specific and less complex elements which are cool and useful to know.</p>
+				
+				
+				<hr />
+				
+				
+				<div class="row">
+                    <div class="span3">
+                        <h3>Lists</h3>
+                        <p></p>
+                    </div>
+					
+                    <div class="span9">
+						
+						<!-- Code Block >> Start -->                   
+						<pre class="prettyprint linenums">
+&lt;ul&gt;
+	&lt;!-- List item.  The data-icon atribute is the code of the icon. To replace the icon go to fontello icons/demo.html and check the &quot;show codes&quot; checkbox. To add the content here replace initial 0 with &amp;# and put a ; at the end. So icon with code 0x1234 should be &amp;#x1234; in the data-icon atribute --&gt;
+	&lt;li data-icon=&quot;&amp;#x2665;&quot;&gt;You can put&lt;/li&gt;
+	&lt;li data-icon=&quot;&amp;#x2692;&quot;&gt;Any icon before a list item&lt;/li&gt;
+	&lt;li data-icon=&quot;&amp;#xe724;&quot;&gt;There are 284 different icons&lt;/li&gt;
+	&lt;li data-icon=&quot;&amp;#xe70c;&quot;&gt;For you to choose&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+				<pre class="prettyprint linenums">
+&lt;!-- List with inline elements with borders. --&gt;
+&lt;ul class=&quot;boxed-list&quot;&gt;
+	&lt;li&gt;List item 1&lt;/li&gt;
+	&lt;li&gt;List 2&lt;/li&gt;
+	&lt;li&gt;List item 3&lt;/li&gt;
+	&lt;!-- Highlighted - colored background and white text --&gt;
+	&lt;li class=&quot;highlight&quot;&gt;List item 4&lt;/li&gt;
+	&lt;li&gt;List 5&lt;/li&gt;
+	&lt;li&gt;List item 6&lt;/li&gt;
+	&lt;li&gt;Item 7&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+				<pre class="prettyprint linenums">
+&lt;!-- Class algin-center means that content inside will be aligned by center --&gt;
+&lt;div class=&quot;column-full align-center&quot;&gt;
+
+	&lt;!-- Class info defines the inline elements with title while class important gives it a background and a border --&gt;
+	&lt;ul class=&quot;info important&quot;&gt;
+		&lt;li&gt;&lt;span&gt;Age&lt;/span&gt; &lt;h5&gt;20&lt;/h5&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;span&gt;Location&lt;/span&gt; &lt;h5&gt;Belgrade&lt;/h5&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;span&gt;Email&lt;/span&gt; &lt;h5&gt;example@email.com&lt;/h5&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;span&gt;My dream&lt;/span&gt; &lt;h5&gt;To become a unicorn&lt;/h5&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;span&gt;Available?&lt;/span&gt; &lt;h5&gt;Yes&lt;/h5&gt; &lt;/li&gt;
+	&lt;/ul&gt;
+
+&lt;/div&gt;</pre>
+			</div>
+		</div>
+
+
+
+						<hr />
+						
+						
+		<div class="row">
+			<div class="span3">
+				<h3>Buttons</h3>
+				<p></p>
+			</div>
+			
+			<div class="span9">
+				
+				<!-- Code Block >> Start -->                   
+				<pre class="prettyprint linenums">
+&lt;!-- Simple button. Apply class button to a tag and there you have it --&gt;
+&lt;a class=&quot;button&quot;&gt;Some text&lt;/a&gt;
+
+&lt;!-- Highlighted - colored background and white text --&gt;
+&lt;a class=&quot;button highlight&quot;&gt;Highlighted button&lt;/a&gt;
+
+&lt;!-- Button with an icon. You can put an icon anywhere by adding a span and a class value of the icon. You can look up for that class values in the fontello icons/demo.html --&gt;
+&lt;a class=&quot;button&quot;&gt;&lt;span class=&quot;icon-info-circled&quot;&gt;&lt;/span&gt; Button with icon&lt;/a&gt;</pre>
+
+			</div>
+			
+		</div>
+		
+			</section>
+
+            
+            <!-- ========================= SECTION: ALERTS >> START ========================= -->
+            <section id="alerts">
+			<hr />
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; aleluja 2013</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+            
+<!-- Code Block >> Start -->                   
+<pre>Legend:
++   Addition
+^   Change
+-   Removed
+*   Security Fix
+#   Bug Fix
+!   Note</pre>
+<!-- Code Block >> End --> 
+                  
+<!-- Code Block >> Start -->                   
+<pre>Initial version 1.0
+
+Version 1.1
+# fixed a color in purple.css
+# fixed a color in red.css
+# added a space after "From:" in email.php on line 43 (on some servers causes mail() not to work)
+</pre>
+
+<!-- Code Block >> End -->                   
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="http://retinajs.com/">retina.js</a> <small>&mdash; Script for loading bigger images when user has retina dislay </small></li>
+                    <li><a href="http://razorjack.net/quicksand/">quicksand.js</a> <small>&mdash; Filterable portfolio plugin. </small></li>
+                    <li><a href="http://lokeshdhakar.com/projects/lightbox2/">LightBox2</a> <small>&mdash; Lightbox2 plugin for viewing big images. </small></li>
+                </ol>
+                <h3>Images</h3>
+                <ol>
+                    <li><a href="http://photodune.net">PhotoDune</a> <small>&mdash; For the great images in the preview. </small></li>
+					<li><a href="http://medialoot.com/item/free-responsive-screen-mockup-pack/">Medialoog</a> <small>&mdash; For the mockup display</small></li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>

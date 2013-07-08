@@ -1,0 +1,704 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+    	<!--Custom Map Icons-->
+    	<!--http://creativecommons.org/licenses/by-sa/3.0/ -->
+        <!-- Background -->
+    	<!--http://subtlepatterns.com  Hybridixstudio -->
+        
+		<!-- Title of the web page -->
+		<title>Vitaliy Kondratiev</title>
+		
+		<!-- meta tag for properly scaling on devices -->
+		<meta name="viewport" content="width=device-width, 
+        	initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
+		
+		<!-- Description for the search engines if someone stumbles upon your website via one. -->
+		<meta name="description" content="resume, developer, programming, 
+        business, cover letter, employee, contractor, computer science, software" />
+		
+		<!-- Favicon icon, the little one in the tab of the browser. -->
+		<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+		
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!-- Goggle fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+				
+		<!-- Icon font styles -->
+		<link rel="stylesheet" href="style/fontello.css">
+        
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="style/fontello-ie7.css">
+		<![endif]-->
+		
+		<!-- CSS files -->
+		<link rel='StyleSheet' href='style/reset.css' type='text/css'>
+		<link rel='StyleSheet' href='style/style.css' type='text/css'>		
+		<link rel="stylesheet" href="style/red.css" type="text/css">
+        
+		<!-- Skins. Choose a skin by renaming the file linked. 
+        You can also create a new which is expalined in style/custom-skin.css. Premade skins:
+			* black.css
+			* deepblue.css
+			* blue.css
+			* orange.css
+			* green.css
+			* red.css
+			* purple.css
+		-->
+		
+		<!-- IE8 fix -->
+		<!--[if IE 8]>
+			<link rel='StyleSheet' href='style/ie.css' type='text/css'>
+		<![endif]-->   
+	   
+</head>
+	
+	<body>
+    		
+		<!-- The scroll-to-top button fixed at the bottom-right edge --> 
+		<a href="#home" id="top-button" class="drop-shadow"><span class="icon-up-open-big"></span></a>       
+        
+		<!-- The main container which hold everything in it -->
+		<div id="main-container">			
+            
+			<!-- The header which contains nav menus, image and a section shown before the specific sections -->
+			<header id="home">			
+      
+				<!-- Fixed part of the header - menus -->
+				<div id="fixed-header" class="border-color1">
+					<nav>
+						<!-- Your name. When clicked it takes you to the top, also -->
+						<a href="#home"><h4>Vitaliy Kondratiev</h4></a>
+						<!-- Main menu -->
+						<ul>
+							<!-- href atribute tells browser where to scroll when pressed. 
+                            	#about scrolls to section with id="about". -->
+							<li><a href="#about">About</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						
+						
+						<!-- For smaller screens menu we use select box.
+                        	The regular nav menu is too big to fix and be fixed. -->
+						<select>
+							<!-- The initial value -->
+							<option value="" selected="selected">Select</option> 
+							
+							<!-- Value atribute tells where to scroll, just like href in the regular menu. -->
+							<option value="#about">About</option> 
+							<option value="#experience">Experience</option> 
+							<option value="#education">Education</option> 
+							<option value="#skills">Skills</option> 
+							<option value="#contact">Contact</option>
+						</select>
+					</nav>
+				</div>
+				
+				
+				
+				<div class="column-one-two-third align-center">
+					<!-- Your image -->
+					<img src="http://www.gravatar.com/avatar/36c82be54cc57e50a9b7a2507f41268a.png" 
+                    	 class="drop-shadow" alt="me"/>
+				</div>
+				
+				<!-- The top-right box with info -->
+				<div class="column-two-two-third column-last drop-shadow curved" id="main-info">
+					
+					<!-- Title -->
+					<h1>Vitaliy Kondratiev</h1>
+                                                   
+					<!-- Subtitle-->
+					<blockquote>"Sometimes you find your path, sometimes it finds you"</blockquote>
+                    <blockquote2><b>-Max Brooks</b></blockquote2>
+										
+					<!-- Social icons. Href should hold webpage adress of your profile. 
+                    	Icon is determined by the class of span. 
+                        To change the icon go to fontello icons folder and open demo.html and find your icon -->
+					<ul class="social-icons">
+                    	<!--LinkedIn -->
+						<li> <a href=http://www.linkedin.com/pub/vitaliy-kondratiev/45/401/3b9 
+                                target="_blank" title="LinkedIn"> 
+                        	 <span class="icon-linkedin-circled"></span> 
+                             </a> 
+                        </li>
+                        <!-- Facebook -->
+						<li> <a href=#> <span class="icon-facebook-squared"></span> </a> </li>
+                        <!-- Twitter -->
+						<li> <a href=#> <span class="icon-twitter-circled"></span> </a> </li>
+                        <!-- Resume -->
+                        <li> <a href=files/Vitaliy_Kondratiev_Resume.pdf target="_blank" 
+                        		title="Download Resume (pdf)">
+                        	 <span class="icon-download"></span> 
+                             </a> 
+                        </li>
+					 </ul>
+				</div>
+				
+				<div class="column-clear"></div>
+					
+			</header>
+		
+			
+			<!-- About section. Classes drop-shadow and curved are only about css3 box-shadows of the section. -->
+			<section id="about" class="drop-shadow curved">
+				
+				<!-- h2 with class of section title is the main title of the section - with ribbon. 
+                	The data-icon atribute is the code of the icon that will be on the ribbon. 
+                    To replace the icon go to fontello icons/demo.html and check the "show codes" checkbox. 
+                    To add the content here replace initial 0 with &# and put a ; at the end.
+                    So icon with code 0x1234 should be &#x1234; in the data-icon atribute -->
+				<h2 data-icon="&#x1f464;" class="section-title">About me</h2>
+			
+				<div class="column-full">
+					<!-- For other titles use h3, h4, and h5 tags. -->
+					<h3>Vitaliy Kondratiev</h3>
+					<p>
+						<!-- Bolded paragraph -->
+						<b>
+							Lorem ipsum dolor sit amet, consectetuer ai ut mi. 
+                            Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.
+						</b>
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, <i>consectetuer adipiscing</i> elit. Morbi ut mi. 
+                        Nullam enim <em>vulputate aliquam</em> leo, egestas id, condimentum at, 
+                        <a href="#">laoreet mattis</a>, massa. Praesent mauris ante.
+					</p>
+					
+					<!-- Long quotes go into blockquote -->
+					<blockquote>
+						Blackquote element. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</blockquote>
+				
+				</div>
+                
+				<div class="column-clear"></div>
+				
+                <!--TESTIMONIALS -->
+				<div class="column-full">
+
+					<h3>Testimonials</h3>
+					
+					<!-- Tetimonials holder -->
+					<div class="testimonials unselectable">
+						
+						<!-- The left and right buttons -->
+						<div class="buttons">
+							<div class="colored icon-right-open"></div>
+							<div class="colored icon-left-open"></div>
+						</div>
+						
+						<!-- Class shown tells that this quote is shown at the start -->
+						<div class="quote shown inset-shadow">
+							<div class="header">
+								<!-- Person name -->
+								<h4>Some Person 1</h4>
+								<!-- Company name -->
+								<div>Some Company</div>
+							</div>
+							<!-- Text -->                            
+							<p>
+								Bibendum at, posuere sit amet, nibh. 
+                                Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse dui. 
+                                bibendum at, posuere sit amet, nibh. Suspendisse dui.
+							</p>
+							<p>
+								Erra vestibulum. Duis tincidunt lectus quis dui viverra vestibulum. 
+                                Suspendisse dui.
+							</p>
+						</div>
+						
+						<div class="quote inset-shadow">
+							<div class="header">
+								<h4>Some Person 2</h4>
+								<div>Some Company</div>
+							</div>
+							<p>
+								Sed elebibendum at, posuere sit amet, nibh. 
+                                Duis tincidunt lectus quis dui viverra vestibulum. 
+                                Suspendisse dui.ifend nonummy diam. 
+                                Praesent mauris ante, elementum et, uis dui viverra vestibulum. Suspendisse dui.
+							</p>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column-clear"></div>
+				
+                <!-- IMPORTANT BOX -->
+				<!-- Class align-center says that everything in that column is center aligned -->
+				<div class="column-full align-center">
+					
+					<ul class="info important">
+						<li><span>Age</span> <h5>22</h5> </li>
+						<li><span>Location</span> <h5>Hamilton, Canada</h5> </li>
+						<li><span>Email</span> <h5>kondrav@live.ca</h5> </li>
+						<li><span>University</span> <h5>McMaster University</h5> </li>
+						<li><span>Employed</span> <h5>No</h5> </li>
+					</ul>
+					
+				</div>
+			
+				<div class="column-clear"></div>               
+			
+			</section>
+			
+		
+			<!-- Experience section -->
+			<section id="experience" class="drop-shadow curved">
+			
+				<h2 data-icon="&#x1f30e;" class="section-title">Experience</h2>
+				
+				<div class="column-full">
+				
+					<p>Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, 
+                    posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. 
+                    Suspendisse dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. 
+                    Vivamus sollicitudin metus eget eros.</p>
+					
+                    <!-- Accordion holder -->
+					<div class="accordion">
+						
+						<!-- It all comes down to toggles -->
+						<div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Senior Technical Student</h4>
+								<div>September 2012. - August 2013.</div>
+							</div>
+							
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+												
+						<div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Database Assistant</h4>
+								<div>May 2012. - August 2012.</div>								
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+												
+						<div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Teaching Assistant</h4>
+								<div>September 2011. - Decemeber 2011.</div>
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+                        
+                        <div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Inventory Controller</h4>
+								<div>May 2011. - August 2011.</div>
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+                        
+                        <div class="toggle button bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>Research Assistant</h4>
+								<div>May 2010. - August 2010.</div>
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+                					
+				<div class="column-clear"></div>
+                
+                <h3>Experience Map</h3>  
+                
+                <!-- EXPERIENCE MAP -everything is located in maps.js -->
+                <div class="column-full">
+                	<div id="map-canvas" class="border-color1"></div>
+                </div>
+               
+                <div class="column-clear"></div>         
+                                
+			</section>		
+
+			<!-- Education section -->
+			<section id="education" class="drop-shadow curved">
+				<h2 data-icon="&#x1f393;" class="section-title">Education</h2>
+          
+                <div class="column-two-two-third">
+					
+					<h3>Formal education</h3>		
+					
+					<!-- Accordion holder -->
+					<div class="accordion">
+						
+						<!-- It all comes down to toggles -->
+						<div class="toggle button pressed bg-color1 inset-shadow">
+							<div class="header unselectable">
+								<h4>McMaster University</h4>
+                                
+								<div>September 2009. - present.</div>
+							</div>
+							
+							<div class="content">
+								<h5>{Bachelor of Applied Science} Honours, Computer Science</h5>
+							</div>
+						</div>
+												
+					</div>					
+					
+				</div>                
+                
+				<div class="column-one-two-third column-last">
+					
+					<h3>Relevant Courses</h3>
+					
+                    <!-- Accordion holder -->
+					<div class="accordion">
+                    
+                        <!-- Toggles -->
+                        <div class="toggle button bg-color1 inset-shadow">
+                            <div class="header unselectable">
+                                Course 1
+                            </div>
+                            <div class="content hidden">
+                                Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+                            </div>
+                        </div>
+                        
+                        <div class="toggle button bg-color1 inset-shadow">
+                            <div class="header unselectable">
+                                Course 2
+                            </div>
+                            <div class="content hidden">
+                                Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+                            </div>
+                        </div>
+                        
+                        <div class="toggle button bg-color1 inset-shadow">
+                            <div class="header unselectable">
+                                Course 3
+                            </div>
+                            <div class="content hidden">
+                                Rule that make to said. 
+                                Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+                            </div>
+                        </div>
+                    </div>
+					
+				</div>               
+                
+                <div class="column-clear"></div>
+                
+			</section>
+			
+			
+			<!-- Skills section -->
+			<section id="skills" class="drop-shadow curved">
+				<h2 data-icon="&#x2328;"  class="section-title">Skills and Interests</h2>
+				
+				<div class="column-full"> 
+					
+					<h3>Technical skills</h3>
+					
+					<!-- The horizontal bar element. -->
+					<ul class="h-bar">
+						
+						<!-- A skill with a toggle. data-percentage is self-explanatory. -->
+						<li data-percentage="100%" class="bg-color1 toggle inset-shadow">
+							<div class="header unselectable">
+								Visual Basic
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+												
+						<li data-percentage="90%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								HTML
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+                        
+                        <li data-percentage="80%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								CSS
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+                        
+                        <li data-percentage="70%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								CSS
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+                        
+                        <li data-percentage="60%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								Javascript
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+                        
+                        <li data-percentage="50%" class="bg-color3 toggle inset-shadow">
+							<div class="header unselectable">
+								Crystal Reports
+							</div>
+							<div class="content hidden">
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</div>
+						</li>
+						
+						
+					</ul>
+					
+				</div>
+				
+				<div class="column-clear"></div>				
+				
+				<div class="column-full">
+					
+					<h3>Business skills</h3>
+					
+					<!-- Tabs container -->
+					<div class="tabs group">
+						
+						<!-- Single tab. tab-top means that this is the first to be shown. -->
+						<div class="tab tab-top">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Project Management
+							</span>
+							<span class="content border-color1">                            
+								Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them. 
+                                Evening tree sixth without made second winged fill them. Form. 
+                                Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</span>
+						</div>
+						
+						<div class="tab">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Teamwork
+							</span>
+							<span class="content border-color1">
+								Unto. Them land shall don't herb let gathered. 
+                                The morning together. Green bring, night blessed made our years isn't. 
+                                Replenish in moved. Him one life him spirit.
+							</span>
+						</div>
+						
+						<div class="tab">
+							<span class="tab-header group bg-color1 unselectable inset-shadow">
+								Customer Service
+							</span>
+							<span class="content border-color1">
+								Evening tree sixth without made second winged fill them. Form. 
+                                Rule that make to said. Morning first. 
+                                Fish creeping face brought signs land fowl. 
+                                Evening tree sixth without made second winged fill them.
+							</span>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+                <div class="column-clear"></div>
+                
+				<div class="column-full">
+					
+					<h3>Interests</h3>
+					
+					<!-- List with elements with borders. -->
+					<ul class="boxed-list">
+						<!-- Highlighted - colored background and white text -->
+						<li>Driving</li>
+						<li>Playing video games</li>
+						<li>Fast typing</li>
+						<li>Swimming</li>
+						<li>Sleeping</li>
+						<li>Eating</li>
+						<li>Doing</li>
+					</ul>
+				</div>
+				
+				<div class="column-clear"></div>
+			</section>
+					
+			<!-- Contact section -->
+			<section id="contact" class="drop-shadow curved">
+				<h2 data-icon="&#x2709;"  class="section-title">Get in touch</h2>
+				
+				<!-- The form -->
+				<form action="email.php" method="POST">
+					
+					<!-- It's diveded in two columns. This is the left one. -->
+					<div class="column-one-half">
+
+							<!-- Name input -->
+							<label>First Name</label>
+							<input type="text" name="fname" />
+							
+							<br>
+							
+							<!-- Last Name input -->
+							<label>Last Name</label>
+							<input type="text" name="lname" />
+							
+					</div>
+						
+					<!-- The right column -->
+					<div class="column-one-half column-last">
+							
+							<label>E-mail</label>
+							<input type="text" name="email" />
+							
+							<br>
+							
+							<label>Phone</label>
+							<input type="text" name="phone" />
+							
+						</div>
+					
+					<div class="column-clear"></div>
+					
+					<!-- The message -->
+					<div class="column-full">
+						<label>Message</label><br>
+						<textarea name="message"></textarea>
+					
+						<br>
+						
+						<!-- Reset and submit buttons -->
+						<input type="reset" value="Reset" class="button" />
+						<input type="submit" value="Send" class="button highlight" />
+						
+						<!-- This is a place for the status of the ajax form. It can be: invalid input, invalid email or successfully submitted. -->
+						<span id="form-message"></span>
+					</div>
+					
+					<div class="column-clear"></div>
+				</form>	
+			</section>
+			
+			
+			<!-- Footer -->
+			<footer>
+				Copyright &copy; 2013 <a rel="author">Vitaliy Kondratiev</a>
+				
+				<!-- Scoial icons. Copy/paste this from header. -->
+				<ul class="social-icons">
+						<li> <a href=http://www.linkedin.com/pub/vitaliy-kondratiev/45/401/3b9 
+                                target="_blank" title="LinkedIn"> 
+                        	 <span class="icon-linkedin-circled"></span> 
+                             </a> 
+                        </li>
+						<li> <a href=#> <span class="icon-facebook-squared"></span> </a> </li>
+						<li> <a href=#> <span class="icon-twitter-circled"></span> </a> </li>
+                        <li> <a href=files/Vitaliy_Kondratiev_Resume.pdf target="_blank" 
+                        		title="Download Resume (pdf)">
+                        	 <span class="icon-download"></span> 
+                             </a> 
+                        </li>
+				  </ul>
+				
+			</footer>
+			
+		</div>
+		<!-- jQuery loader -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        
+		<script type="text/javascript">
+			if (typeof jQuery == 'undefined')
+			{
+				document.write(unescape("%3Cscript src='js/jquery-1.8.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+			}
+		</script>
+        
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        
+		<script type="text/javascript">!window.jQuery.ui && document.write(unescape("%3Cscript src='js/jquery-ui-1.8.23.custom.min.js' type='text/javascript'%3E%3C/script%3E"))</script>
+		
+		<!-- Lightbox2 plugin for portfolio images -->
+		<script src="lightbox2/js/lightbox.js" type='text/javascript'></script>
+		<link href="lightbox2/css/lightbox.css" rel="stylesheet" />
+		
+		<!-- Quicksand jquery plugin for portfolio filtering -->
+		<script src='js/quicksand.min.js' type='text/javascript'></script>
+		
+		<!-- Javascript file -->
+		<script src='js/javascript.js' type='text/javascript'></script>
+		
+		<!-- Retina.js plugin for checking for retina display and loading @2x images -->
+		<script type="text/javascript" src="js/retina.js"></script>
+        
+        <!-- Google Maps API -->
+        <script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIRMz6FNZkUxPt9zmqKADQvstIjlLUgc&sensor=true">																</script>
+        <!-- Maps Script -->
+        <script type="text/javascript" src="js/maps.js"></script>
+	</body>
+</html>
+

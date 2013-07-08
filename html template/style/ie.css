@@ -1,0 +1,26 @@
+/*
+ * IE8 hacks
+ */
+
+.section-title:after {
+	font-size: 2.1em;
+}
+.section-title:before {
+	display: none;
+}
+
+.testimonials .quote {
+	display: none;
+}
+
+.testimonials .shown {
+	display: block;
+}
+
+.portfolio a .zoom-icon {
+	display: none;
+}
+.portfolio a:hover .zoom-icon {
+	display: block;
+	background: #bbb;
+}
