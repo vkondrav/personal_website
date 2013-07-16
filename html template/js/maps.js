@@ -104,12 +104,12 @@ function initialize() {
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     },
-	disableDefaultUI: true,
-	scrollwheel: false,
-	navigationControl: true,
-	mapTypeControl: false,
-	scaleControl: false,
-	draggable: true
+  	disableDefaultUI: true,
+  	scrollwheel: false,
+  	navigationControl: true,
+  	mapTypeControl: false,
+  	scaleControl: false,
+  	draggable: true
   };
   
   var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -117,9 +117,21 @@ function initialize() {
 	
   //Toronto Hydro	
   var tHydro = new google.maps.LatLng(43.661383,-79.382958);
+  var Home = new google.maps.LatLng(43.447342, -79.757720);
   
+  //office symbol
   var office = {
     url: 'mapicons/office-building.png',
+    size: new google.maps.Size(32, 37),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(0, 37)
+  };
+
+  //house symbol
+  var house = {
+    url: 'mapicons/house.png',
     size: new google.maps.Size(32, 37),
     // The origin for this image is 0,0.
     origin: new google.maps.Point(0,0),
@@ -130,19 +142,34 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: tHydro,
       map: map,
-	  icon: office,
+	    icon: office,
       title: 'Toronto Hydro - 14 Carlton Street'
   });
+
+  var marker2 = new google.maps.Marker({
+      position: Home,
+      map: map,
+      icon: house,
+      title: 'Home'
+  });
+
+  var lyfeCoordinates = [tHydro, Home];
+
+  // var lyfe = new google.maps.Polyline({
+  //   map: map,
+  //   path: lyfeCoordinates,
+  //   strokeColor: "#FF0000",
+  //   strokeOpacity: 0.5,
+  //   strokeWeight: 4
+  // });
  
   google.maps.event.addListener(marker, 'click', function() {
     window.open("http://www.torontohydro.com/sites/electricsystem/Pages/foryourhome.aspx");
   });
-  
+
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
-  
-  
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
