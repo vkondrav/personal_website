@@ -117,7 +117,14 @@ function initialize() {
 	
   //Toronto Hydro	
   var tHydro = new google.maps.LatLng(43.661383,-79.382958);
+  //Home
   var Home = new google.maps.LatLng(43.447342, -79.757720);
+  //McMaster University
+  var McMaster = new google.maps.LatLng(43.261394,-79.920394);
+  //Juravinski Hospital
+  var Juravinski = new google.maps.LatLng(43.239966,-79.84531);
+  //Drive Products
+  var DriveProducts = new google.maps.LatLng(43.6564,-79.639145);
   
   //office symbol
   var office = {
@@ -139,11 +146,41 @@ function initialize() {
     anchor: new google.maps.Point(0, 37)
   };
   
+  //university symbol
+  var uni = {
+    url: 'mapicons/university.png',
+    size: new google.maps.Size(32, 37),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(0, 37)
+  };
+  
+  //auto symbol
+  var auto = {
+    url: 'mapicons/workshop.png',
+    size: new google.maps.Size(32, 37),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(0, 37)
+  };
+  
+  //hospital
+  var hospital = {
+    url: 'mapicons/hospital-building.png',
+    size: new google.maps.Size(32, 37),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(0, 37)
+  };
+  
   var marker = new google.maps.Marker({
       position: tHydro,
       map: map,
-	    icon: office,
-      title: 'Toronto Hydro - 14 Carlton Street'
+	  icon: office,
+      title: 'Toronto Hydro\nSenior Technical Student'
   });
 
   var marker2 = new google.maps.Marker({
@@ -152,8 +189,29 @@ function initialize() {
       icon: house,
       title: 'Home'
   });
+  
+  var marker3 = new google.maps.Marker({
+      position: McMaster,
+      map: map,
+      icon: uni,
+      title: 'McMaster University\nStudent\nResearch Assistant\nTeaching Assistant'
+  });
+  
+  var marker4 = new google.maps.Marker({
+      position: DriveProducts,
+      map: map,
+      icon: auto,
+      title: 'Drive Products\nInventory Controller'
+  });
+  
+  var marker5 = new google.maps.Marker({
+      position: Juravinski,
+      map: map,
+      icon: hospital,
+      title: 'PEBC - Cancer Care Ontario\nDatabase Assistant'
+  });
 
-  var lyfeCoordinates = [tHydro, Home];
+  //var lyfeCoordinates = [tHydro, Home];
 
   // var lyfe = new google.maps.Polyline({
   //   map: map,
@@ -164,7 +222,19 @@ function initialize() {
   // });
  
   google.maps.event.addListener(marker, 'click', function() {
-    window.open("http://www.torontohydro.com/sites/electricsystem/Pages/foryourhome.aspx");
+    window.open("http://www.torontohydro.com/");
+  });
+  
+  google.maps.event.addListener(marker3, 'click', function() {
+    window.open("http://www.mcmaster.ca/");
+  });
+  
+  google.maps.event.addListener(marker4, 'click', function() {
+    window.open("http://www.driveproducts.com/");
+  });
+  
+  google.maps.event.addListener(marker5, 'click', function() {
+    window.open("https://www.cancercare.on.ca/about/programs/pebc/");
   });
 
   //Associate the styled map with the MapTypeId and set it to display.

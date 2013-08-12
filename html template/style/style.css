@@ -523,6 +523,12 @@ hr {
 	color: #f5f5f5;
 	margin: 0;
 }
+
+.toggle .header h5 {
+	color: #f5f5f5;
+	margin: 0;
+}
+
 .toggle .header div {
 	color: #ddd;
 }
@@ -623,8 +629,6 @@ hr {
 	opacity: 1;
 	display: block;
 }
-
-
 
 .timebar {
 	
